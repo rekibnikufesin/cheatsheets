@@ -10,6 +10,8 @@ list all indexes:
 search all:
 curl -XGET http://10.250.2.241:9200/logstash-2014.11.27/_search?pretty=true&q={'matchAll':{''}}
 
+close index:
+curl -XPOST 'localhost:9200/my_index/_close'
 
 redis:
 redis-cli
